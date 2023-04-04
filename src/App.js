@@ -1,7 +1,7 @@
 
 import React from "react";
 import { SquidWidget } from '@0xsquid/widget';
-
+import './App.css';
 
 
 export const WidgetPage = () => {
@@ -10,44 +10,79 @@ export const WidgetPage = () => {
 
 function App() {
   return (
-    <div className="App" style={{padding: "2rem", width: "auto", height: "auto"}}>
-      <SquidWidget config={
-        {companyName: "Squid",
-        slippage: 1,
-        infiniteApproval: false,
-        instantExec: false,
-        apiUrl: "https://api.0xsquid.com",
-        priceImpactWarnings: {
-          warning: 3,
-          critical: 5,
-        },
-        initialFromChainId: 250,
-        initialToChainId: 1,
+    
+    <div className="App">
+      
+      {/* <header className="App-header">
   
-        // Mark fantom as not coming soon
-        comingSoonChainIds: [
-          // Mainnet
-          42161,
-          56,
-          "cosmoshub-4",
-          "crescent-1",
-          "injective-1",
-          "juno-1",
-          "kaiyo-1",
-          "osmosis-1",
-          "secret-4",
-          "phoenix-1",
-          "agoric-3",
-          "mantle-1",
-          "axelar-dojo-1",
-          "comdex-1",
-          "evmos_9001-2",
-          "fetchhub-4",
-          "kichain-2",
-          "regen-1",
-          "umee-1",
-        ]
-      }} />
+        <h1>
+          This Product.
+        </h1>
+
+      </header> */}
+
+
+      <SquidWidget config={
+      {
+          "companyName": "Squid",
+          defaultTokens: [
+            {
+              address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", // Token address for ETH
+              chainId: 1, // Chain ID for Ethereum
+            },
+            {
+              address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", // Token address for Matic
+              chainId: 137, // Chain ID for Moonbeam
+            },
+          ],
+          initialFromChainId: 137, // eg. Polygon
+          initialToChainId: 42161, // eg. Arbitrum
+          "style": {
+            "neutralContent": "#1a692d",
+            "baseContent": "#1a202c",
+            "base100": "#e0f9d8",
+            "base200": "#ffffff",
+            "base300": "#edf2f6",
+            "error": "#ED6A5E",
+            "warning": "#FFB155",
+            "success": "#e2f9d8",
+            "primary": "#329239",
+            "secondary": "#F89CC3",
+            "secondaryContent": "#F7F6FB",
+            "neutral": "#FFFFFF",
+            "roundedBtn": "10px",
+            "roundedBox": "1rem",
+            "roundedDropDown": "20rem",
+            "displayDivider": true
+          },
+          "slippage": 1.5,
+          "infiniteApproval": false,
+          "instantExec": false,
+          "apiUrl": "https://api.squidrouter.com",
+          "comingSoonChainIds": [
+              "cosmoshub-4",
+              "injective-1",
+              "axelar-dojo-1",
+              "kichain-2"
+          ],
+          "titles": {
+              "swap": "Swap for Gas",
+              "settings": "Settings",
+              "wallets": "Wallets",
+              "tokens": "Tokens",
+              "chains": "Chains",
+              "history": "History",
+              "transaction": "Transaction",
+              "allTokens": "Tokens",
+              "destination": "Destination address"
+          },
+          "priceImpactWarnings": {
+              "warning": 3,
+              "critical": 5
+          }
+      }
+      } />
+
     </div>
   );
 }
