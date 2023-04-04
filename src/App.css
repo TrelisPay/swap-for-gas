@@ -1,0 +1,33 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .buttonStyle {
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background: #329239;
+    padding: .5em;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .buttonStyle:hover {
+    color: white;
+    background: #1f6024;
+  }
+  
+  .App-header {
+    font-face: "mono";
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
