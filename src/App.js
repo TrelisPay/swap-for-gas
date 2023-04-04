@@ -32,11 +32,11 @@ function App() {
             },
             {
               address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", // Token address for Matic
-              chainId: 137, // Chain ID for Moonbeam
+              chainId: 137, // Chain ID for Polygon
             },
           ],
-          initialFromChainId: 137, // eg. Polygon
-          initialToChainId: 42161, // eg. Arbitrum
+          initialFromChainId: 137, // Polygon
+          initialToChainId: 42161, // Arbitrum
           "style": {
             "neutralContent": "#1a692d",
             "baseContent": "#1a202c",
