@@ -2,6 +2,7 @@
 import React from "react";
 import { SquidWidget } from '@0xsquid/widget';
 import './App.css';
+import { Helmet } from 'react-helmet';
 
 
 export const WidgetPage = () => {
@@ -13,6 +14,22 @@ function App() {
     
     <div className="App">
       
+      <Helmet>
+        <title>My App Title</title>
+        <meta name="description" content="Swap tokens between chains to get gas for an empty wallet. Supports Ethereum, Polygon, Arbitrum, Optimism, BSC, Avalanche, Fantom, Celo, Kava and more. E.g. swap Ether for Matic or BNB for FTM." />
+        <meta name="keywords" content="gas, swap, ethereum, polygon, avalanche, optimism, arbitrum, fantom, binance smart chain, ether, matic, bnb, ftm" />
+        <meta name="author" content="Trelis" />
+        <meta property="og:title" content="Swap for Gas" />
+        <meta property="og:description" content="Swap tokens between chains to get gas for an empty wallet. Supports Ethereum, Polygon, Arbitrum, Optimism, BSC, Avalanche, Fantom, Celo, Kava and more. E.g. swap Ether for Matic or BNB for FTM." />
+        <meta property="og:image" content="https://example.com/myimage.jpg" />
+        <meta property="og:url" content="https://swap-for-gas.trelis.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="My App Title" />
+        <meta name="twitter:description" content="Swap tokens between chains to get gas for an empty wallet. Supports Ethereum, Polygon, Arbitrum, Optimism, BSC, Avalanche, Fantom, Celo, Kava and more. E.g. swap Ether for Matic or BNB for FTM." />
+        <meta name="twitter:image" content="https://example.com/myimage.jpg" />
+        <meta name="twitter:card" content="Trelis Swap for Gas" />
+      </Helmet>
+
       <header className="App-header">
         <h1 style={{ textAlign: 'center' }}>Swap for Gas</h1>
         <h3 style={{ textAlign: 'center' }}>Get gas for an empty wallet</h3>
