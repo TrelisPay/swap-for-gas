@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@0xsquid/sdk@1.3.11":
-  version "1.3.11"
-  resolved "https://registry.yarnpkg.com/@0xsquid/sdk/-/sdk-1.3.11.tgz#2a43fb9a3a92290dbcb40ee440937bcd65737088"
-  integrity sha512-dd+mzIQPSJ69dLfZRBAdlhvy6D926i/LWlAx8103xDn6NL4aQftKGyfeFZASi421D6F6O9TUuknQRmW5eIN2bQ==
+"@0xsquid/sdk@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@0xsquid/sdk/-/sdk-1.4.0.tgz#ba7c481080b0e84491b5d744656587d96cb12134"
+  integrity sha512-MzmfOGKI5+juGydD8oesUZWFf/REwtdTOZ7dStXsjeWhwGG9wght37FOz6jFhXZ/oBhoR2Jp03sfZ3a7rU7oFA==
   dependencies:
     "@release-it/conventional-changelog" release-it/conventional-changelog
     axios "^0.27.2"
     ethers "^5.7.1"
     release-it "^15.5.0"
 
-"@0xsquid/widget@^1.4.60":
-  version "1.4.60"
-  resolved "https://registry.yarnpkg.com/@0xsquid/widget/-/widget-1.4.60.tgz#d70707a024a4d95c7761c50a3ab108925cdd999a"
-  integrity sha512-vqTBdlW8nW09i/l7kkPuHxKP+asiZtU+CUOQgvSBzy3GBWgLdTESEd2FtxTEwnbzOjjtjeg3O6jwuWbqoOs9UA==
+"@0xsquid/widget@^1.4.61":
+  version "1.4.61"
+  resolved "https://registry.yarnpkg.com/@0xsquid/widget/-/widget-1.4.61.tgz#824760a7e807d75ce7395c1f0f9c31500f60d96e"
+  integrity sha512-yJS6CMdIWb/eButXXzxw2x4UzzAY2pX+NvL3nkPYzDSP/2KuTDekSc7yZWM52mmug5LVDBdIOlrtLIfaeBOK9w==
   dependencies:
-    "@0xsquid/sdk" "1.3.11"
+    "@0xsquid/sdk" "1.4.0"
     "@cosmjs/stargate" "^0.29.2"
     "@floating-ui/react-dom" "^1.0.1"
     "@floating-ui/react-dom-interactions" "^0.12.0"
@@ -2491,7 +2491,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@release-it/conventional-changelog@release-it/conventional-changelog":
+"@release-it/conventional-changelog@github:release-it/conventional-changelog":
   version "5.1.1"
   resolved "https://codeload.github.com/release-it/conventional-changelog/tar.gz/ff9f1aae654dc378d5ed4703a2802ef9591e1a96"
   dependencies:
