@@ -10,6 +10,17 @@ export const WidgetPage = () => {
 };
 
 function App() {
+
+  const handleCopyAddressClick = () => {
+    navigator.clipboard.writeText('0x938d5f203D0AF635691172eDC0499dE929170AfA')
+      .then(() => {
+        alert('Donation address copied to clipboard!');
+      })
+      .catch(err => {
+        console.error('Failed to copy donation address: ', err);
+      });
+  };
+
   return (
     
     <div className="App">
@@ -106,10 +117,16 @@ function App() {
       <footer className="App-footer" style={{ textAlign: 'center' }}>
         <p style={{ color: '#FFFFFF' }}>Swap-for-gas is in beta. Use at your own risk and only for small amounts.</p>
         <button style={{ backgroundColor: '#4d4d4d', color: '#FFFFFF', padding: '10px 20px', borderRadius: '5px', border: 'none', margin: '10px' }}><a href="https://docs.trelis.com/products/swap-for-gas" target="_blank" rel="noopener noreferrer" style={{ color: '#FFFFFF', textDecoration: 'none' }}>Documentation</a></button>
-        <button style={{ backgroundColor: '#329239', color: '#FFFFFF', padding: '10px 20px', borderRadius: '5px', border: 'none', margin: '10px' }} onClick={() => {
-          navigator.clipboard.writeText('0x938d5f203D0AF635691172eDC0499dE929170AfA');
-          alert('Donation address copied to clipboard!');
-        }}>Copy Donation Address (EVM only)</button>
+        <button style={{
+                  backgroundColor: '#329239',
+                  color: '#FFFFFF',
+                  padding: '10px 20px',
+                  borderRadius: '5px',
+                  border: 'none',
+                  margin: '10px',
+                  cursor: 'pointer'
+                }}
+                onClick={handleCopyAddressClick}>Copy Donation Address (EVM chains only)</button> 
       </footer>
 
     </div>
