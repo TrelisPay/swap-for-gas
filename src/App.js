@@ -59,6 +59,10 @@ function App() {
                   chainId: 1, // Chain ID for Ethereum
                 },
                 {
+                  address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", // Token address for ETH
+                  chainId: 42161, // Chain ID for Arbitrum
+                },
+                {
                   address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", // Token address for Matic
                   chainId: 137, // Chain ID for Polygon
                 },
