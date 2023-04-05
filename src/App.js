@@ -21,13 +21,13 @@ function App() {
         <meta name="author" content="Trelis" />
         <meta property="og:title" content="Swap for Gas" />
         <meta property="og:description" content="Swap tokens between chains to get gas for an empty wallet. Supports Ethereum, Polygon, Arbitrum, Optimism, BSC, Avalanche, Fantom, Celo, Kava and more. E.g. swap Ether for Matic or BNB for FTM." />
-        <meta property="og:image" content="https://example.com/myimage.jpg" />
-        <meta property="og:url" content="https://swap-for-gas.trelis.com" />
+        <meta property="og:image" content="https://swap-for-gas.trelis.com/assets/open-graph-swap-for-gas.png" />
+        <meta property="og:url" content="https://swap-for-gas.trelis.com/" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:title" content="My App Title" />
+        <meta name="twitter:title" content="Swap for Gas" />
         <meta name="twitter:description" content="Swap tokens between chains to get gas for an empty wallet. Supports Ethereum, Polygon, Arbitrum, Optimism, BSC, Avalanche, Fantom, Celo, Kava and more. E.g. swap Ether for Matic or BNB for FTM." />
-        <meta name="twitter:image" content="https://example.com/myimage.jpg" />
-        <meta name="twitter:card" content="Trelis Swap for Gas" />
+        <meta name="twitter:image" content="https://swap-for-gas.trelis.com/assets/open-graph-swap-for-gas.png" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
       <header className="App-header">
