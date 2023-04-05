@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       
       <Helmet>
-        <title>Swap for Gas>
+        <title>Swap for Gas</title>
         <meta name="description" content="Swap tokens between chains to get gas for an empty wallet. Supports Ethereum, Polygon, Arbitrum, Optimism, BSC, Avalanche, Fantom, Celo, Kava and more. E.g. swap Ether for Matic or BNB for FTM." />
         <meta name="keywords" content="gas, swap, ethereum, polygon, avalanche, optimism, arbitrum, fantom, binance smart chain, ether, matic, bnb, ftm" />
         <meta name="author" content="Trelis" />
