@@ -1,12 +1,16 @@
 .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+body {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Arial, sans-serif;
   }
   
-  .buttonStyle {
+  /* .buttonStyle {
     font-size: calc(10px + 2vmin);
     color: white;
     background: #329239;
@@ -30,4 +34,4 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-  }
+  } */
